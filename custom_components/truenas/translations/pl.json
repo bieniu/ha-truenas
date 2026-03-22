@@ -1,0 +1,40 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "description": "Skonfiguruj integrację TrueNAS.",
+                "data": {
+                    "name": "Nazwa integracji",
+                    "host": "Host",
+                    "api_key": "Klucz API",
+                    "verify_ssl": "Weryfikuj certyfikat SSL"
+                }
+            },
+            "reconfigure": {
+                "description": "Ponowna konfiguracja integracji TrueNAS.",
+                "data": {
+                    "host": "Host",
+                    "api_key": "Klucz API",
+                    "verify_ssl": "Weryfikuj certyfikat SSL"
+                }
+            }
+        },
+        "error": {
+            "name_exists": "Nazwa już istnieje.",
+            "invalid_key": "Logowanie nie powiodło się, nieprawidłowy klucz API.",
+            "invalid_hostname": "Połączenie nie powiodło się, nieprawidłowa nazwa hosta.",
+            "connection_refused": "Połączenie nie powiodło się, połączenie odrzucone.",
+            "handshake_timeout": "Połączenie nie powiodło się, przekroczono czas oczekiwania na odpowiedź handshake.",
+            "api_not_found": "Połączenie nie powiodło się, nie znaleziono API.",
+            "malformed_result": "Odpowiedź API jest nieprawidłowa.",
+            "certificate_verify_failed": "Weryfikacja certyfikatu nie powiodła się.",
+            "http_used": "Wysłano zwykłe żądanie HTTP na port HTTPS. Reverse proxy?",
+            "tlsv1_not_supported": "TLSv1 nie jest obsługiwany. Reverse proxy?",
+            "websocket_not_supported": "WebSocket nie jest obsługiwany. Reverse proxy?",
+            "unknown_hostname": "Nieznana nazwa hosta, sprawdź DNS."
+        },
+        "abort": {
+            "reconfigure_successful": "Ponowna konfiguracja zakończona."
+        }
+    }
+}

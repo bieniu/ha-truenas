@@ -170,9 +170,8 @@ SENSOR_TYPES: tuple[TrueNASSensorEntityDescription, ...] = (
     TrueNASSensorEntityDescription(
         key="system_uptime",
         name="Uptime",
-        icon="mdi:clock-outline",
         native_unit_of_measurement=None,
-        device_class=SensorDeviceClass.TIMESTAMP,
+        device_class=SensorDeviceClass.UPTIME,
         state_class=None,
         entity_category=EntityCategory.DIAGNOSTIC,
         ha_group="System",
